@@ -12,14 +12,11 @@ header{
     width: 100%;
 }
 
-#navi{
-    
+
+ 
+nav{
     grid-row: 2/3;
     background-color: gray;
-    
-    
-} 
-nav{
     display: flex;
     background-color: black;
     text-align: center;
