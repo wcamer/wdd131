@@ -99,7 +99,7 @@ section:nth-child(1){
 .cardHeader{
     text-align: center;
     grid-column: 1/4;
-    background-color: green;
+    background-color: #D1efb5;
 }
 
 section h2{
