@@ -12,12 +12,26 @@ h1{
     font-family: "Sedan", serif;
     text-align: center;
     padding: 2%;
+    font-size: 2rem;
     
 }
-p{
-    font-family: "Raleway", sans-serif;
+
+h2{
+    font-size: 1.5rem;
 }
 
+p , a{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.3rem;
+}
+
+a{
+    font-size: 2rem
+}
+
+img{
+    width: 100%;
+}
 body{
     background-color: #D3FAD6;
     /* background-color: #EDEBA0; */
@@ -56,50 +70,97 @@ nav a:hover{
 
 main{
     display: grid;
-    grid-template: 1fr  / 2fr 1fr;
-    width: 100%;
-    max-width:fit-content;
+    grid-template: 1fr / 2fr 1fr;
+    /* width: 100%; */
+    gap: 1%;
+    max-width:100%;
     padding: 1%;
     margin: 1%;
 }
 
 .card{
     border: 2px solid black;
-}
-
-section:nth-child(1){
-    grid-column: 1/2;
-    background-color: #EDEBA0;
-    /* background-color: #D3FAD6; */
-    display: grid;
-    grid-template: 1fr 3fr/ 1fr 1fr 1fr ;
-}
-
-section h2{
-    text-align: center;
-    grid-column: 1/4;
-}
-#me{
-    grid-column: 1/4;
-    display: grid;
-    grid-template: auto / 3fr 1fr;
-}
-
-#aboutUtah{
-    grid-column: 1/4;
-    display: grid;
-    grid-template: auto / 1fr 3fr;
-}
-
-#aboutUtah p{
-    grid-column: 2/4;
+    border-radius: 10px;
     
 }
 
 
 
-footer{
+section:nth-child(1){
+    
+    grid-column: 1/2;
+    background-color: #EDEBA0;
+    /* background-color: #D3FAD6; */
+    
+    display: grid;
+    grid-template: auto 2fr/ 1fr 1fr 1fr ;
+}
+
+.cardHeader{
     text-align: center;
+    grid-column: 1/4;
+    background-color: green;
+}
+
+section h2{
+    /* background-color: pink; */
+    text-align: center;
+    grid-column: 1/4;
+}
+
+#me{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: grid;
+    grid-template: auto / 3fr 1fr; */
+    padding: 2%;
+    margin: 2%;
+}
+
+#meDesc{
+    padding:2%;
+    margin: 2%;
+}
+
+#aboutUtah{
+    grid-column: 1/4;
+    /* display: grid;
+    grid-template: auto / 1fr 3fr; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#aboutUtah p, #aboutUtah img{
+    /* grid-column: 2/4; */
+    padding: 2%;
+    margin: 2%;
+    
+}
+
+section:nth-child(2){
+   
+    background-color: #EDEBA0;
+    /* background-color: #D3FAD6; */
+    
+    display: grid;
+    grid-template: auto 3fr/ 1fr ;
+}
+
+#wdrList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer{
+    
+    text-align: center;
+    background-color: #928c6F;
+    align-items: center;
     
 }
 
